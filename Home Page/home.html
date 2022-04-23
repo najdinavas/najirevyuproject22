@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revyu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="hero-img">
+        <svg width="1366" height="768" viewBox="0 0 1366 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1344.2 0C1163.62 511.659 344.56 614.116 0.992455 600.747H-2V768H1366V0H1344.2Z" fill="#FF9D01" fill-opacity="0.07"/>
+        </svg>
+            
+    </div>
+    <nav>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Revyu logo">
+        </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><button class='installBtn' onclick="document.getElementById('elementId').style.display='block'" style="width:auto;">Install Now</button></li>
+        </ul>
+        
+                
+    </nav>
+    <div class="wrapper">
+            
+        <section class="hero">
+            <div>
+                <h1>Ai Powered Reviews</h1>
+                <p class="subhead">Stunning social proof that drives brand growth using AI. Join us and make your customers happier than ever!</p>
+                <button class='getStartedBtn' >Get Started</button>
+                <button class='demoBtn' >Schedule a Demo</button>
+            </div>
+            
+            <div>
+                <img src="images/hero.png" alt="">
+            </div>
+            
+        </section>
+        
+        <section class="more-info">
+                <div class="feature left">
+                    <img src="images/img1.png" alt="">
+                    <div class="content">
+                        <p class="title">Unlimited Review Imports</p>
+                        <p class="desc">Easily bulk import reviews from AliExpress to Shopify. Unlimited reviews imported via CSV, XLS file, and spreadsheet. Import as many reviews as you like, anytime you like.</p>
+                    </div>
+                    
+                </div>
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">Popup Reviews</p>
+                        <p class="desc">Get your best reviews noticed by leveraging our innovative pop-up reviews. Add Revyu's Review Widget and PopUp Widget on your product page and get higher conversion rates with ease.</p>
+                    </div>
+                    <img src="images/img2.png" alt="">
+                </div>
+             
+            <div class="feature left">
+                <img src="images/img3.png" alt="">
+                <div class="content">
+                    <p class="title">Stunning Design</p>
+                    <p class="desc">With our powerful theme editor and stunning prebuilt 9+ themes, you can custom tailor the review widget to suit your store’s theme so that you'll never have to compromise on your branding.</p>
+                </div>
+                
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Auto Generation by AI</p>
+                    <p class="desc">While importing reviews from AliExpress, Revyu will automatically auto-generate and override existing identifiers (Name, Gender, Country, & Email ID) so you don’t have to edit them manually.</p>
+                </div>
+                <img src="images/img4.png" alt="">
+            </div>
+            <div class="feature left">
+                <img src="images/img5.png" alt="">
+                <div class="content">
+                    <p class="title">Smart Date Fixer</p>
+                    <p class="desc">Do you spend hours updating dates on older reviews? Not anymore! Let our state-of-art AI date fixer do it for you in just a click.</p>
+                </div>
+                
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">AI Review Generation</p>
+                    <p class="desc">No longer would you have to import reviews from AliExpress that have outdated entries and broken grammar. Let our AI generate reviews for your products, just like a real person. Fresh, clean, and something that looks legitimate!</p>
+                </div>
+                <img src="images/img6.png" alt="">
+            </div>
+            <div class="feature left">
+                <img src="images/img7.png" alt=""/>
+                <div class="content">
+                    <p class="title">Rich SEO Snippets</p>
+                    <p class="desc">Get more visibility on search engine results page with rich SEO snippets and a high click-through rate.</p>
+                </div>
+                
+            </div>
+        </section>
+        <div id="info-card">
+            <h2>Pricing</h2>
+            <ul>
+                <li><a href="#"><img src="images/Card1.png" alt=""></a></li>
+                <li><a href="#"><img src="images/Card2.png" alt=""></a></li>
+                <li><a href="#"><img src="images/Card3.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+                const close = document.querySelector('.close')
+                const nav = document.querySelector('nav')
+    
+                menu.addEventListener('click', () => {
+                    nav.classList.add('open-nav')
+                })
+    
+                close.addEventListener('click', () => {
+                    nav.classList.remove('open-nav')
+                })
+    </script>
+    
+
+    .open-nav {
+        transform: translateX(0%);
+    }
+
+</body>
+</html>
